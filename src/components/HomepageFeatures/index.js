@@ -80,9 +80,9 @@ const FeatureList = [
 
 const GalleryList = [
   {
-    title: 'Museum Guide',
-    icon: faBuildingColumns,
-    description: 'Alter-Ego can provide information about exhibits, answer questions, and enhance the visitor experience.',
+    title: 'Muschio Selvaggio',
+    video: 'https://www.youtube.com/embed/1JmQZO3mBEo?si=anhnLUzBDaGcKOU6&amp;start=80',
+    description: 'Alter-Ego has been teleoperated from Milan during an episode of Muschio Selvaggio',
   },
   {
     title: "Italia's Got Talent",
