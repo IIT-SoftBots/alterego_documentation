@@ -91,7 +91,7 @@ const GalleryList = [
   },
   {
     title: 'Aquarium Guide',
-    video: 'https://www.youtube.com/watch?v=dukKL50JNT4&t=24s',
+    video: 'https://www.youtube.com/embed/dukKL50JNT4?si=Ba-C_zm6iI7DNZWp',
     description: 'Alter-Ego can provide information about marine life, answer questions, and enhance the visitor experience.',
   },
 ];
