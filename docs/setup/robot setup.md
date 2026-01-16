@@ -2,7 +2,7 @@
 title: Robot setup
 sidebar_position: 1
 ---
-# Robot Setup (Fake section)
+# Robot Setup
 
 ![setup](/img/setup.png)
 

@@ -87,8 +87,8 @@ function HomepageHeader() {
 
         {/* EGO PICTURE */}
                 {<img
-          src={require('/img/homepage.png').default}
-          style={{ width: '100%', maxWidth: '600px', height: 'auto', marginBottom: '-0.5rem' }}
+          src={require('/img/ego_nobg.png').default}
+          style={{ width: '100%', maxWidth: '500px', height: 'auto', marginBottom: '-0.5rem' }}
           className={styles.introImage}
         />}
       </div>

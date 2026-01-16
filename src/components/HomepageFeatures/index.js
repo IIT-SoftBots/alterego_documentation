@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import React from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faBrain, 
@@ -80,14 +81,14 @@ const FeatureList = [
 
 const GalleryList = [
   {
-    title: 'Muschio Selvaggio',
-    video: 'https://www.youtube.com/embed/1JmQZO3mBEo?si=anhnLUzBDaGcKOU6&amp;start=80',
-    description: 'Alter-Ego has been teleoperated from Milan during an episode of Muschio Selvaggio',
-  },
-  {
     title: "Italia's Got Talent",
     video: 'https://www.youtube.com/embed/DJGeX3ddcJY?si=0U41T2c3xtEfRDGh',
     description: 'Alter-Ego showcased its skills on a popular talent show, impressing judges and audiences alike.',
+  },
+  {
+    title: 'Muschio Selvaggio',
+    video: 'https://www.youtube.com/embed/1JmQZO3mBEo?si=anhnLUzBDaGcKOU6&amp;start=80',
+    description: 'Alter-Ego has been teleoperated from Milan during an episode of Muschio Selvaggio.',
   },
   {
     title: 'Aquarium Guide',
@@ -99,15 +100,17 @@ const GalleryList = [
 function Feature({icon, title, description, color}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className={styles.featureCard}>
-        <div className="text--center">
-          <div className={styles.iconContainer} style={{'--icon-color': color, '--icon-bg-color': `${color}20`}}>
-            <FontAwesomeIcon icon={icon} className={styles.featureIcon} />
-          </div>
+      <div className={styles.featureCard} style={{'--icon-color': color, '--icon-bg-color': `${color}15`}}>
+        <div className={styles.iconContainer}>
+          <FontAwesomeIcon icon={icon} className={styles.featureIcon} />
         </div>
-        <div className="text--center padding-horiz--md">
+        <div className="padding-horiz--md">
           <Heading as="h3">{title}</Heading>
           <p>{description}</p>
+        </div>
+        <div className={styles.learnMore}>
+          <span>Explore technology</span>
+          <FontAwesomeIcon icon={faArrowRight} className={styles.learnMoreIcon} />
         </div>
       </div>
     </div>
@@ -141,8 +144,6 @@ function GalleryItem({ icon, title, description, video }) {
   );
 }
 
-
-
 function Feature_({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
@@ -171,23 +172,20 @@ function Feature_({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
-    <>
+    <div className={styles.homepageWrapper}>
       <section className={styles.features}>
         <div className="container">
-          <div className="text--center margin-bottom--lg">
+          <div className="text--center margin-bottom--xl">
               <Heading as="h2" className={styles.sectionTitle}>Revolutionary Features</Heading>
-              <p className={styles.sectionSubtitle}>Alter-Ego combines cutting-edge technology with intuitive design to create <br /> the most advanced humanoid companion.</p>
+              <p className={styles.sectionSubtitle}>Alter-Ego combines cutting-edge technology with intuitive design to create the most advanced humanoid companion.</p>
           </div>
-          <div className="row">
+          <div className={clsx('row', styles.featureGrid)}>
             {FeatureList.map((props, idx) => (
               <Feature key={idx} {...props} />
             ))}
           </div>
         </div>
       </section>
-
-
-
 
       <section className={styles.gallerySection}>
         <div className="container">
@@ -206,23 +204,8 @@ export default function HomepageFeatures() {
               <FontAwesomeIcon icon={faArrowRight} className={styles.buttonIcon} />
             </button>
           </div>
-
-
-          {/* Uncomment this section if you want to add the old features */}
-          {/* <div>
-            <section className={styles.features}>
-              <div className="container">
-                <div className="row">
-                  {FeatureList_.map((props, idx) => (
-                    <Feature_ key={idx} {...props} />
-                  ))}
-                </div>
-              </div>
-            </section>
-          </div> */}
-
         </div>
       </section>
-    </>
+    </div>
   );
 }
