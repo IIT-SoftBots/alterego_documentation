@@ -11,7 +11,7 @@ We welcome contributions to improve the documentation and website. To contribute
 5. Commit your changes and push them. 
 
 > [!NOTE]
-> Every commit automatically triggers a GitHub Action that builds the website and deploys it to the `gh-pages` branch.
+> Every commit automatically triggers a GitHub Action that builds the website and publishes it.
 > Please ensure your changes are working as expected before pushing !!!
 
 ## Local development
