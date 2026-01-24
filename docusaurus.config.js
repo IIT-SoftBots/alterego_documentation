@@ -14,7 +14,7 @@ const projectName = "alterego_documentation";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Alter-Ego',
+  title: 'AlterEgo',
   tagline: 'Your next robot companion',
   favicon: 'img/favicon.ico',
     // GitHub Pages adds a trailing slash by default that I don't want
@@ -83,7 +83,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Alter-Ego',
+        title: 'AlterEgo',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
