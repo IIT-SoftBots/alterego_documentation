@@ -10,18 +10,18 @@ const TeamCategories = [
     title: 'Leadership',
     members: [
       { name: 'Antonio Bicchi', role: 'Senior Scientist', image: '/img/people/Bicchi.jpeg' },
-      { name: 'Manuel Catalano', role: 'Researcher', image: '/img/people/Catalano.jpeg' },
-      { name: 'Giorgio Grioli', role: 'Researcher', image: '/img/people/Grioli.jpg' },
+      { name: 'Manuel Catalano', role: 'Senior Scientist', image: '/img/people/Catalano.jpeg' },
+      { name: 'Giorgio Grioli', role: 'Senior Scientist', image: '/img/people/Grioli.jpg' },
     ]
   },
   {
     title: 'Researchers',
     members: [
       { name: 'Luca Garello', role: 'Post-doc Researcher', image: '/img/people/Garello.jpeg' },
-      { name: 'Eleonora Sguerri', role: 'Team Leader', image: '/img/people/Sguerri.jpeg' },
-      { name: 'Manuel Barbarossa', role: 'Senior Technician', image: '/img/people/Barbarossa.jpeg' },
+      { name: 'Eleonora Sguerri', role: 'Senior Technician', image: '/img/people/Sguerri.jpeg' },
+      { name: 'Manuel Barbarossa', role: 'Chief Technician', image: '/img/people/Barbarossa.jpeg' },
       { name: 'Cristiano Petrocelli', role: 'Senior Technician', image: '/img/people/Petrocelli.jpeg' },
-            { name: 'Samuele Bordini', role: 'PhD Student', image: '/img/people/Bordini.jpeg' },
+      { name: 'Samuele Bordini', role: 'PhD Student', image: '/img/people/Bordini.jpeg' },
       { name: 'Do Won Park', role: 'PhD Student', image: '/img/people/Park.jpeg' },
       { name: 'Riccardo Simi', role: 'PhD Student', image: '/img/people/Simi.jpeg' },
     ]

@@ -18,22 +18,22 @@ import {
 
 const FeatureList = [
   {
-    title: 'Advanced AI',
+    title: 'A Living AI',
     icon: faBrain,
     color: '#6366f1', // Indigo
     description: (
       <>
-        Our proprietary neural network allows Alter-Ego to learn from interactions and adapt to your personality and preferences.
+        Our proprietary cognitive architecture allows AlterEgo to learn from interactions and adapt to your personality and preferences.
       </>
     ),
   },
   {
-    title: 'Human-like Interaction',
+    title: 'Safe Interaction',
     icon: faHandsHelping,
     color: '#ec4899', // Pink
     description: (
       <>
-        With 42 degrees of freedom, Alter-Ego moves with natural fluidity and can express a wide range of human emotions.
+        Thanks to its variable stiffness actuators and sophisticated sensors, AlterEgo can interact with the world in a natural and safe manner.
       </>
     ),
   },
@@ -53,7 +53,7 @@ const FeatureList = [
     color: '#8b5cf6', // Purple
     description: (
       <>
-       Fluent in over 50 languages with real-time translation, making Alter-Ego the perfect companion for global citizens.
+       Fluent in over 50 languages with real-time translation, making AlterEgo the perfect companion for global citizens.
       </>
     ),
   },
@@ -73,7 +73,7 @@ const FeatureList = [
     color: '#f59e0b', // Yellow
     description: (
       <>
-        From math to music, Alter-Ego can teach you new skills with infinite patience and personalized lesson plans.
+        AlterEgo can teach you new skills with infinite patience and personalized lesson plans.
       </>
     ),
   },
@@ -83,17 +83,17 @@ const GalleryList = [
   {
     title: "Italia's Got Talent",
     video: 'https://www.youtube.com/embed/DJGeX3ddcJY?si=0U41T2c3xtEfRDGh',
-    description: 'Alter-Ego showcased its skills on a popular talent show, impressing judges and audiences alike.',
+    description: 'AlterEgo showcased its skills on a popular talent show, impressing judges and audiences alike.',
   },
   {
     title: 'Muschio Selvaggio',
     video: 'https://www.youtube.com/embed/1JmQZO3mBEo?si=anhnLUzBDaGcKOU6&amp;start=80',
-    description: 'Alter-Ego has been teleoperated from Milan during an episode of Muschio Selvaggio.',
+    description: 'AlterEgo has been teleoperated from Milan during an episode of Muschio Selvaggio.',
   },
   {
     title: 'Aquarium Guide',
     video: 'https://www.youtube.com/embed/dukKL50JNT4?si=Ba-C_zm6iI7DNZWp',
-    description: 'Alter-Ego can provide information about marine life, answer questions, and enhance the visitor experience.',
+    description: 'AlterEgo can provide information about marine life, answer questions, and enhance the visitor experience.',
   },
 ];
 
@@ -108,10 +108,11 @@ function Feature({icon, title, description, color}) {
           <Heading as="h3">{title}</Heading>
           <p>{description}</p>
         </div>
-        <div className={styles.learnMore}>
+        {/* THIS IS THE LEARN MORE LINK BELOW - ENABLE IF YOU NEED TO EXPLAIN THE FEATURE MORE */}
+        {/* <div className={styles.learnMore}>
           <span>Explore technology</span>
           <FontAwesomeIcon icon={faArrowRight} className={styles.learnMoreIcon} />
-        </div>
+        </div> */}
       </div>
     </div>
   );
@@ -177,7 +178,7 @@ export default function HomepageFeatures() {
         <div className="container">
           <div className="text--center margin-bottom--xl">
               <Heading as="h2" className={styles.sectionTitle}>Revolutionary Features</Heading>
-              <p className={styles.sectionSubtitle}>Alter-Ego combines cutting-edge technology with intuitive design to create the most advanced humanoid companion.</p>
+              <p className={styles.sectionSubtitle}>AlterEgo combines cutting-edge technology with intuitive design to create the most advanced humanoid companion.</p>
           </div>
           <div className={clsx('row', styles.featureGrid)}>
             {FeatureList.map((props, idx) => (
@@ -190,8 +191,8 @@ export default function HomepageFeatures() {
       <section className={styles.gallerySection}>
         <div className="container">
           <div className="text--center margin-bottom--lg">
-            <Heading as="h2" className={styles.sectionTitle}>Alter-Ego in Action</Heading>
-            <p className={styles.sectionSubtitle}>See how Alter-Ego integrates seamlessly into daily life, from public assistance to personal companionship.</p>
+            <Heading as="h2" className={styles.sectionTitle}>AlterEgo in Action</Heading>
+            <p className={styles.sectionSubtitle}>See how AlterEgo integrates seamlessly into daily life, from public assistance to personal companionship.</p>
           </div>
           <div className="row">
             {GalleryList.map((props, idx) => (
