@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
@@ -12,6 +13,7 @@ import React, { useState, useEffect } from 'react';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const videoUrl = useBaseUrl('/vid/intro.mp4');
 
   return (
 
@@ -20,11 +22,30 @@ function HomepageHeader() {
       style={{
         width: '100vw',
         marginLeft: 'calc(-50vw + 50%)',
-        padding: '0rem 0',
+        padding: '12rem 0',
+        minHeight: '70vh',
+        display: 'flex',
+        alignItems: 'center',
         background: 'linear-gradient(90deg, #4f8cff 0%, #6ee7b7 100%)',
+        position: 'relative',
+        overflow: 'hidden',
       }}
     >
-      <div className="container" style={{ maxWidth: '1000px', textAlign: 'center' }}>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        className={styles.videoBackground}
+        style={{ pointerEvents: 'none' }}
+      >
+        <source src={videoUrl} type="video/quicktime" />
+        <source src={videoUrl} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className={clsx("container", styles.heroContent)} style={{ maxWidth: '1000px', textAlign: 'center' }}>
 
       {/* EGO PICTURE
       <section className={styles.introSection}>
@@ -67,30 +88,15 @@ function HomepageHeader() {
           {siteConfig.tagline}
         </p>
 
-        {/* <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            style={{
-              fontSize: '1.25rem',
-              padding: '1rem 2.5rem',
-              borderRadius: '2rem',
-              boxShadow: '0 4px 16px rgba(79,140,255,0.15)',
-              backgroundColor: '#0d57dfff',
-              color: '#fff',
-              border: 'none',
-            }}
-            to="/docs/tutorials/intro"
-          >
-            Let's get started with Ego!
-          </Link>
-        </div> */}
-
-        {/* EGO PICTURE */}
+        {/* EGO PICTURE
                 {<img
           src={require('/img/ego_nobg.png').default}
           style={{ width: '100%', maxWidth: '500px', height: 'auto', marginBottom: '-0.5rem' }}
           className={styles.introImage}
-        />}
+        />} */}
+
+
+
       </div>
     </header>
   );

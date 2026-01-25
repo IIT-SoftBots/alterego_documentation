@@ -59,13 +59,13 @@ function TeamMember({ name, role, image }) {
 
 export default function Team() {
   return (
-    <Layout title="Team" description="The brilliant minds behind Alter-Ego">
+    <Layout title="Team" description="The brilliant minds behind AlterEgo">
       <main>
         <section className={styles.teamSection}>
           <div className="container">
             <div className="text--center margin-bottom--xl">
               <Heading as="h1" className={styles.sectionTitle}>Meet the Team</Heading>
-              <p className={styles.sectionSubtitle}>The brilliant minds behind Alter-Ego robot project.</p>
+              <p className={styles.sectionSubtitle}>The brilliant minds behind AlterEgo.</p>
             </div>
             
             {TeamCategories.map((category, idx) => (
