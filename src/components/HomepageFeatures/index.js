@@ -13,7 +13,8 @@ import {
   faGraduationCap,
   faBuildingColumns,
   faFishFins,
-  faArrowRight
+  faArrowRight,
+  faGamepad
 } from '@fortawesome/free-solid-svg-icons';
 
 const FeatureList = [
@@ -28,7 +29,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Safe Interaction',
+    title: 'Safe By Design',
     icon: faHandsHelping,
     color: '#ec4899', // Pink
     description: (
@@ -58,12 +59,12 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Health Companion',
-    icon: faHeartbeat,
+    title: 'Teleoperation Ready',
+    icon: faGamepad,
     color: '#10b981', // Green
     description: (
       <>
-        Can remind you to take medication or suggest when to seek medical attention.
+        You are always in control. AlterEgo can be teleoperated remotely, allowing you to be present anywhere, anytime.
       </>
     ),
   },
@@ -73,7 +74,9 @@ const FeatureList = [
     color: '#f59e0b', // Yellow
     description: (
       <>
-        AlterEgo can teach you new skills with infinite patience and personalized lesson plans.
+        AlterEgo can answer questions and provide explanations.
+        It's long experience as museum guide makes it an excellent educational companion.
+      
       </>
     ),
   },
@@ -201,7 +204,7 @@ export default function HomepageFeatures() {
           </div>
           <div className="text--center margin-top--xl">
             <button className={clsx('button button--primary button--lg', styles.galleryButton)}>
-              Check out our YouTube Channel
+              Check our YouTube Channel
               <FontAwesomeIcon icon={faArrowRight} className={styles.buttonIcon} />
             </button>
           </div>
