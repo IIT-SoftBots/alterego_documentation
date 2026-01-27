@@ -81,11 +81,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/ego_social_card.webp', // this is used when linking to the site on social media, chat apps, etc.
       navbar: {
         title: 'AlterEgo',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'AlterEgo Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -121,7 +121,11 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Getting Started',
+                label: 'Setup',
+                to: '/docs/setup/intro',
+              },
+              {
+                label: 'Tutorials',
                 to: '/docs/tutorials/intro',
               },
             ],
@@ -151,10 +155,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
                 label: 'GitHub',
                 href: 'https://github.com/IIT-SoftBots/AlterEGO_v2',

@@ -247,6 +247,15 @@
 .galleryButton {
   display: inline-flex;
   align-items: center;
+  background-color: #e60000;
+  border-color: #e60000;
+  color: white;
+}
+
+.galleryButton:hover {
+  background-color: #b40000;
+  border-color:   #b40000;
+  color: white;
 }
 
 .buttonIcon {
@@ -402,4 +411,71 @@
 
 .teamMemberCard:hover .teamMemberImage {
   transform: scale(1.05);
+}
+
+/***************************
+/* Partners Section */
+/***************************/
+
+.partnersSection {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.partnersGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.partnerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: var(--ifm-card-background-color);
+  border-radius: 1rem;
+  min-width: 200px;
+  max-width: 250px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.partnerItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: var(--ifm-color-primary);
+}
+
+.partnerLogoPlaceholder {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerIcon {
+  font-size: 2.5rem;
+  color: var(--ifm-color-emphasis-600);
+  opacity: 0.6;
+}
+
+.partnerLogo {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partnerItem:hover .partnerLogo {
+  filter: grayscale(0%);
+  opacity: 1;
 }

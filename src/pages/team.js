@@ -26,12 +26,15 @@ const TeamCategories = [
       { name: 'Riccardo Simi', role: 'PhD Student', image: '/img/people/Simi.jpeg' },
     ]
   },
-//   {
-//     title: 'Technical Team',
-//     members: [
+  {
+    title: 'Collaborators',
+    members: [
+      { name: 'Francesco Rea', role: 'Senior Scientist', image: '/img/people/Rea.jpeg' },
+      { name: 'Alessandra Sciutti', role: 'Senior Scientist', image: '/img/people/Sciutti.jpeg' },
+      { name: 'Francesca Cocchella', role: 'PhD Student', image: '/img/people/Cocchella.jpeg' },
 
-//     ]
-//   },
+    ]
+  },
 //   {
 //     title: 'PhD Students',
 //     members: [

@@ -100,6 +100,34 @@ const GalleryList = [
   },
 ];
 
+const PartnerList = [
+    {
+    name: 'Kilometro Rosso',
+    image: '/logos/kilometro_rosso.png',
+  },
+  {
+    name: 'Confcommercio',
+    image: '/logos/confcommercio.png',
+  },
+  {
+    name: 'Acquario di Genova',
+    image: '/logos/acquario.png',
+  },
+  {
+    name: 'Museo Galata',
+    image: '/logos/Galata.png',
+  },
+  {
+    name: 'IRCCS Maugeri',
+    image: '/logos/Maugeri.png',
+  },
+  {
+    name: 'Stella Maris',
+    image: '/logos/stella_maris.png',
+  },
+
+];
+
 function Feature({icon, title, description, color}) {
   return (
     <div className={clsx('col col--4')}>
@@ -148,15 +176,15 @@ function GalleryItem({ icon, title, description, video }) {
   );
 }
 
-function Feature_({Svg, title, description}) {
+function Partner({ name, icon, image }) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+    <div className={styles.partnerItem}>
+      <div className={styles.partnerLogoPlaceholder}>
+        {image ? (
+          <img src={useBaseUrl(image)} alt={name} className={styles.partnerLogo} />
+        ) : (
+          <FontAwesomeIcon icon={icon} className={styles.partnerIcon} />
+        )}
       </div>
     </div>
   );
@@ -207,6 +235,20 @@ export default function HomepageFeatures() {
               Check our YouTube Channel
               <FontAwesomeIcon icon={faArrowRight} className={styles.buttonIcon} />
             </button>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.partnersSection}>
+        <div className="container">
+          <div className="text--center">
+            <Heading as="h2" className={styles.sectionTitle}>Our Partners</Heading>
+            <p className={styles.sectionSubtitle}>We collaborate with leading institutions and companies to push the boundaries of robotics.</p>
+          </div>
+          <div className={styles.partnersGrid}>
+            {PartnerList.map((props, idx) => (
+              <Partner key={idx} {...props} />
+            ))}
           </div>
         </div>
       </section>

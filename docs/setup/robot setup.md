@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 # Robot Setup
 
-![setup](/img/setup.png)
+![setup](/img/setup.jpg)
 
 This section provides a comprehensive guide on how to set up your robot, including hardware installation, software configuration, and initial testing procedures. Follow the steps carefully to ensure your robot is ready for operation.
 ## Hardware Installation
