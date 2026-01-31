@@ -24,6 +24,9 @@ const TeamCategories = [
       { name: 'Samuele Bordini', role: 'PhD Student', image: '/img/people/Bordini.jpeg' },
       { name: 'Do Won Park', role: 'PhD Student', image: '/img/people/Park.jpeg' },
       { name: 'Riccardo Simi', role: 'PhD Student', image: '/img/people/Simi.jpeg' },
+      { name: 'Nikolas Helling', role: 'Fellow Researcher', image: '/img/people/helling.jpg' },
+      { name: 'Gabriele Ribolla', role: 'Fellow Researcher', image: '/img/people/ribolla.jpg' },
+      { name: 'Daniele Taglietti', role: 'Fellow Researcher', image: '/img/people/taglietti.png' },
     ]
   },
   {

@@ -95,15 +95,21 @@ const config = {
             label: 'Setup',
             position: 'left',
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            label: 'Tutorials',
-            position: 'left',
-          },
+          //  --- COMMENTED OUT FOR NOW ---
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   label: 'Tutorials',
+          //   position: 'left',
+          // },
           {
             to: '/team',
             label: 'Team',
+            position: 'left',
+          },
+          {
+            to: '/contact',
+            label: 'Contact Us',
             position: 'left',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
@@ -124,10 +130,11 @@ const config = {
                 label: 'Setup',
                 to: '/docs/setup/intro',
               },
-              {
-                label: 'Tutorials',
-                to: '/docs/tutorials/intro',
-              },
+              // --- COMMENTED OUT FOR NOW ---
+              // {
+              //   label: 'Tutorials',
+              //   to: '/docs/tutorials/intro',
+              // },
             ],
           },
           {
@@ -155,10 +162,14 @@ const config = {
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'Team',
+                to: '/team',
+              },
+              {
+                label: 'Contact Us',
+                to: '/contact',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/IIT-SoftBots/AlterEGO_v2',
