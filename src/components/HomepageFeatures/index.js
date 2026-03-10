@@ -3,6 +3,7 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faBrain, 
@@ -231,10 +232,10 @@ export default function HomepageFeatures() {
             ))}
           </div>
           <div className="text--center margin-top--xl">
-            <a href="https://www.youtube.com/playlist?list=PLzEoYml21jz7iQs2PxzNA6aJ-_gE1JQ7K" target="_blank" rel="noopener noreferrer" className={clsx('button button--primary button--lg', styles.galleryButton)}>
+            <Link to="https://www.youtube.com/playlist?list=PLzEoYml21jz7iQs2PxzNA6aJ-_gE1JQ7K" className={clsx('button button--primary button--lg', styles.galleryButton)}>
               Check our YouTube Channel
               <FontAwesomeIcon icon={faArrowRight} className={styles.buttonIcon} />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
