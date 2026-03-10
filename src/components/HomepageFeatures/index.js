@@ -231,10 +231,10 @@ export default function HomepageFeatures() {
             ))}
           </div>
           <div className="text--center margin-top--xl">
-            <button className={clsx('button button--primary button--lg', styles.galleryButton)}>
+            <a href="https://www.youtube.com/playlist?list=PLzEoYml21jz7iQs2PxzNA6aJ-_gE1JQ7K" target="_blank" rel="noopener noreferrer" className={clsx('button button--primary button--lg', styles.galleryButton)}>
               Check our YouTube Channel
               <FontAwesomeIcon icon={faArrowRight} className={styles.buttonIcon} />
-            </button>
+            </a>
           </div>
         </div>
       </section>
