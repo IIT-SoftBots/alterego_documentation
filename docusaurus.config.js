@@ -114,7 +114,7 @@ const config = {
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/IIT-SoftBots/AlterEGO_v2',
+            href: 'https://github.com/NMMI/AlterEgo',
             label: 'GitHub',
             position: 'right',
           },
@@ -146,7 +146,7 @@ const config = {
               },
               {
                 label: 'YouTube',
-                href: 'https://www.youtube.com/channel/alterego_robot',
+                href: 'https://www.youtube.com/playlist?list=PLzEoYml21jz7iQs2PxzNA6aJ-_gE1JQ7K', //TODO: open our YouTube channel and add the link here
               },
               // {
               //   label: 'Discord',
@@ -172,7 +172,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/IIT-SoftBots/AlterEGO_v2',
+                href: 'https://github.com/NMMI/AlterEgo',
               },
             ],
           },
