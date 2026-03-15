@@ -20,12 +20,12 @@ import {
 
 const FeatureList = [
   {
-    title: 'A Living AI',
+    title: 'Designed to Adapt',
     icon: faBrain,
     color: '#6366f1', // Indigo
     description: (
       <>
-        Our proprietary cognitive architecture allows AlterEgo to learn from interactions and adapt to your personality and preferences.
+        AlterEgo's cognitive architecture is designed to learn from interactions and adapt to you over time, creating a truly personalized experience.
       </>
     ),
   },

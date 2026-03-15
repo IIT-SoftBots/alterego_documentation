@@ -23,8 +23,13 @@ const config = {
   url: `https://${organizationName}.github.io`,
   baseUrl: `/${projectName}/`,
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    }
+  },
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName, // Usually your GitHub org/user name.
@@ -170,29 +175,33 @@ const config = {
                 label: 'Contact Us',
                 to: '/contact',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/NMMI/AlterEgo',
-              },
+              // Uncomment if you want to link github also in the footer
+              // {
+              //   label: 'GitHub',
+              //   href: 'https://github.com/NMMI/AlterEgo',
+              // },
             ],
           },
         ],
-        // add three logos on the same line
-        logo: {
-          alt: 'Soft Bots Logo',
-          src: 'img/softbot.png',
-          href: 'https://softbots.iit.it/',
-          height: 60, // adjust as needed
-        },
-        // logo: {
-        //   alt: 'Centro Piaggio Logo',
-        //   src: 'img/centropiaggio.png',
-        //   href: 'https://www.centropiaggio.unipi.it/',
-        //   height: 60, // adjust as needed
-        // },
 
 
-        copyright: `Copyright © ${new Date().getFullYear()} - Built with Docusaurus.`,
+        copyright: `
+          <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-bottom: 20px; margin-top: 50px; flex-wrap: wrap;">
+            <a href="https://softbots.iit.it/" target="_blank" rel="noopener noreferrer">
+              <img src="/alterego_documentation/logos/softbot.png" alt="Soft Bots Logo" style="height: 60px;" />
+            </a>
+
+            <a href="https://www.qbrobotics.com/" target="_blank" rel="noopener noreferrer">
+              <img src="/alterego_documentation/logos/qb_robotics.png" alt="qb robotics Logo" style="height: 60px;" />
+            </a>
+            <a href="https://www.centropiaggio.unipi.it/" target="_blank" rel="noopener noreferrer">
+              <img src="/alterego_documentation/logos/centropiaggio.png" alt="Centro Piaggio Logo" style="height: 60px;" />
+            </a>
+            <a href="https://contact.iit.it/" target="_blank" rel="noopener noreferrer">
+              <img src="/alterego_documentation/logos/contact.png" alt="Soft Bots Logo" style="height: 60px;" />
+            </a>
+          </div>
+          <p>Copyright © ${new Date().getFullYear()} - Built with Docusaurus.</p>`,
       },
       prism: {
         theme: prismThemes.github,
