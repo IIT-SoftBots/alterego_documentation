@@ -96,7 +96,7 @@ const GalleryList = [
   },
     {
     title: 'Muschio Selvaggio',
-    video: 'https://www.youtube.com/watch?v=8DBLtSx0Ido' https://www.youtube.com/embed/1JmQZO3mBEo?si=anhnLUzBDaGcKOU6&amp;start=80',
+    video: 'https://www.youtube.com/embed/1JmQZO3mBEo?si=anhnLUzBDaGcKOU6&amp;start=80',
     description: 'AlterEgo has been teleoperated from Milan during an episode of Muschio Selvaggio.',
   },
   {
