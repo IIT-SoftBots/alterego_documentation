@@ -95,11 +95,11 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'setupSidebar',
-            label: 'Setup',
-            position: 'left',
-          },
+          //   type: 'docSidebar',
+          //   sidebarId: 'setupSidebar',
+          //   label: 'Setup',
+          //   position: 'left',
+          // },
           //  --- COMMENTED OUT FOR NOW ---
           // {
           //   type: 'docSidebar',
@@ -128,20 +128,20 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Setup',
-                to: '/docs/setup/intro',
-              },
-              // --- COMMENTED OUT FOR NOW ---
-              // {
-              //   label: 'Tutorials',
-              //   to: '/docs/tutorials/intro',
-              // },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Setup',
+          //       to: '/docs/setup/intro',
+          //     },
+          //     // --- COMMENTED OUT FOR NOW ---
+          //     // {
+          //     //   label: 'Tutorials',
+          //     //   to: '/docs/tutorials/intro',
+          //     // },
+          //   ],
+          // },
           {
             title: 'Community',
             items: [
